@@ -3,561 +3,939 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>فست‌فود مازالی</title>
+
+<title>فست‌فود مازالی | منو و قیمت</title>
 
 <style>
+
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
 body{
-  font-family:Tahoma,Arial,sans-serif;
-  background:#fff8f0;
-  color:#333;
-  line-height:1.8;
+    font-family:Tahoma,Arial,sans-serif;
+    background:#fff8f0;
+    color:#292929;
+    line-height:1.9;
 }
 
-header{
-  background:linear-gradient(135deg,#d62828,#f77f00);
-  color:white;
-  text-align:center;
-  padding:35px 15px;
-}
-
-header h1{
-  font-size:32px;
-  margin-bottom:8px;
-}
-
-header p{
-  font-size:17px;
-}
-
-nav{
-  background:#222;
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:8px;
-  padding:10px;
-  position:sticky;
-  top:0;
-  z-index:100;
-}
-
-nav a{
-  color:white;
-  text-decoration:none;
-  padding:8px 14px;
-  border-radius:20px;
-  font-size:14px;
-}
-
-nav a:hover{
-  background:#d62828;
+a{
+    text-decoration:none;
 }
 
 .container{
-  width:92%;
-  max-width:1100px;
-  margin:auto;
+    width:92%;
+    max-width:1100px;
+    margin:auto;
 }
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#ff512f,#f09819);
+    color:white;
+    padding:25px 0;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.logo{
+    font-size:34px;
+    font-weight:900;
+}
+
+.subtitle{
+    font-size:17px;
+    margin-top:4px;
+}
+
+/* NAV */
+
+nav{
+    background:#222;
+    padding:12px 5px;
+    position:sticky;
+    top:0;
+    z-index:100;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin:0 8px;
+    font-size:14px;
+}
+
+/* HERO */
 
 .hero{
-  text-align:center;
-  padding:45px 15px;
+    margin-top:20px;
+    border-radius:25px;
+    overflow:hidden;
+    min-height:420px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    background:
+    linear-gradient(rgba(0,0,0,.48),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1400&q=85")
+    center/cover;
+    box-shadow:0 8px 30px rgba(0,0,0,.18);
 }
 
-.hero h2{
-  font-size:28px;
-  color:#d62828;
-  margin-bottom:10px;
+.hero-content{
+    padding:35px 20px;
+}
+
+.hero h1{
+    font-size:38px;
+    font-weight:900;
+    margin-bottom:15px;
 }
 
 .hero p{
-  margin-bottom:20px;
+    font-size:19px;
+    max-width:750px;
+    margin:auto;
+}
+
+.hero-buttons{
+    margin-top:25px;
 }
 
 .btn{
-  display:inline-block;
-  background:#d62828;
-  color:white;
-  text-decoration:none;
-  padding:11px 22px;
-  border-radius:25px;
-  margin:5px;
-  font-weight:bold;
+    display:inline-block;
+    padding:13px 25px;
+    border-radius:50px;
+    margin:5px;
+    font-weight:bold;
+    transition:.2s;
 }
 
-.btn.bale{
-  background:#168aad;
+.btn:hover{
+    transform:scale(1.04);
 }
 
-.section{
-  padding:35px 0;
+.btn-bale{
+    background:#00a86b;
+    color:white;
+}
+
+.btn-menu{
+    background:white;
+    color:#e94b23;
+}
+
+/* SECTION */
+
+section{
+    padding:45px 0;
 }
 
 .section-title{
-  text-align:center;
-  color:#d62828;
-  font-size:25px;
-  margin-bottom:25px;
+    text-align:center;
+    font-size:29px;
+    font-weight:900;
+    margin-bottom:25px;
 }
 
+.section-title span{
+    color:#f15a24;
+}
+
+/* CHANNEL BOX */
+
+.channel-box{
+    background:linear-gradient(135deg,#111,#333);
+    color:white;
+    padding:30px 22px;
+    border-radius:22px;
+    text-align:center;
+    margin:30px 0;
+    box-shadow:0 7px 25px rgba(0,0,0,.2);
+}
+
+.channel-box h2{
+    font-size:27px;
+    margin-bottom:10px;
+}
+
+.channel-box p{
+    font-size:16px;
+    margin-bottom:18px;
+}
+
+.channel-btn{
+    display:inline-block;
+    background:#00b86b;
+    color:white;
+    padding:13px 28px;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+/* CARDS */
+
 .cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:18px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
 }
 
 .card{
-  background:white;
-  border-radius:18px;
-  padding:20px;
-  box-shadow:0 4px 15px rgba(0,0,0,.08);
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,.1);
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card-img{
+    width:100%;
+    height:190px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:17px;
 }
 
 .card h3{
-  color:#d62828;
-  margin-bottom:8px;
+    font-size:21px;
+    font-weight:900;
+    margin-bottom:5px;
+}
+
+.description{
+    color:#777;
+    font-size:14px;
+    min-height:50px;
 }
 
 .price{
-  color:#e85d04;
-  font-weight:bold;
-  font-size:18px;
+    color:#e84d22;
+    font-size:25px;
+    font-weight:900;
+    margin-top:8px;
+}
+
+/* MENU */
+
+.menu-section{
+    background:#fff;
+    border-radius:22px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 3px 15px rgba(0,0,0,.07);
+}
+
+.menu-title{
+    font-size:25px;
+    font-weight:900;
+    color:#e94b23;
+    border-bottom:3px solid #ffcf9c;
+    padding-bottom:10px;
+    margin-bottom:10px;
 }
 
 .menu-item{
-  background:white;
-  margin:10px 0;
-  padding:15px 18px;
-  border-radius:14px;
-  box-shadow:0 2px 8px rgba(0,0,0,.06);
-  display:flex;
-  justify-content:space-between;
-  gap:15px;
-  align-items:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+    padding:15px 5px;
+    border-bottom:1px dashed #ddd;
 }
 
-.menu-item .name{
-  font-weight:bold;
+.menu-item:last-child{
+    border-bottom:none;
 }
 
-.menu-item .description{
-  font-size:13px;
-  color:#777;
+.item-name{
+    font-size:17px;
+    font-weight:bold;
 }
 
-.prices{
-  white-space:nowrap;
-  font-weight:bold;
-  color:#e85d04;
+.item-price{
+    color:#e94b23;
+    font-size:20px;
+    font-weight:900;
+    white-space:nowrap;
 }
 
-.category{
-  margin-top:25px;
-  margin-bottom:15px;
-  color:#333;
-  border-right:5px solid #f77f00;
-  padding-right:10px;
+/* PACKS */
+
+.pack{
+    background:white;
+    border-radius:22px;
+    padding:23px;
+    margin-bottom:1
+  8px;
+    box-shadow:0 5px 18px rgba(0,0,0,.09);
+    border-right:6px solid #f15a24;
 }
-        </style>
+
+.pack h3{
+    font-size:24px;
+    color:#e94b23;
+    margin-bottom:8px;
+}
+
+.pack p{
+    font-size:16px;
+}
+
+.pack-price{
+    display:block;
+    margin-top:12px;
+    font-size:27px;
+    font-weight:900;
+    color:#e94b23;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#242424;
+    color:white;
+    border-radius:22px;
+    padding:30px;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:15px;
+}
+
+.contact p{
+    margin:5px 0;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:#aaa;
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .logo{
+        font-size:27px;
+    }
+
+    .hero{
+        min-height:430px;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .section-title{
+        font-size:25px;
+    }
+
+    .menu-item{
+        align-items:flex-start;
+    }
+
+    .item-name{
+        font-size:16px;
+    }
+
+    .item-price{
+        font-size:18px;
+    }
+
+    .pack-price{
+        font-size:25px;
+    }
+
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>🍔 فست‌فود مازالی</h1>
-  <p>طعم خوب، غذای تازه، حال خوب ❤️</p>
+
+<div class="container">
+
+<div class="logo">
+🍔 فست‌فود مازالی
+</div>
+
+<div class="subtitle">
+طعم خوب، غذای تازه، حال خوب ❤️
+</div>
+
+</div>
+
 </header>
 
+
 <nav>
-  <a href="#home">خانه</a>
-  <a href="#popular">پرفروش‌ها</a>
-  <a href="#menu">منو</a>
-  <a href="#packs">پک‌ها</a>
-  <a href="#contact">تماس و آدرس</a>
+
+<a href="#home">خانه</a>
+<a href="#bestsellers">پرفروش‌ها</a>
+<a href="#menu">منو</a>
+<a href="#packs">پک‌ها</a>
+<a href="#contact">تماس</a>
+
 </nav>
 
-<main>
 
-<section id="home" class="hero">
-  <div class="container">
-    <h2>خوش اومدی به مازالی 🌹</h2>
-    <p>
-      اینجا می‌تونی منوی کامل، قیمت‌ها و غذاهای محبوب مازالی رو ببینی.
-    </p>
+<main class="container">
 
-    <a class="btn" href="#menu">دیدن منو 🍔</a>
-    <a class="btn bale" href="https://ble.ir/fastfoodmazali" target="_blank">
-      عضویت در بله 📲
-    </a>
-  </div>
+
+<!-- HERO -->
+
+<section id="home">
+
+<div class="hero">
+
+<div class="hero-content">
+
+<h1>
+🔥 تخفیف‌های مازالی رو از دست نده!
+</h1>
+
+<p>
+بعضی از بهترین قیمت‌ها و پیشنهادهای ویژه مازالی
+فقط در کانال بله اعلام می‌شن.
+<br>
+📲 عضو کانال مازالی شو تا اولین نفری باشی که
+از تخفیف‌های جدید و پیشنهادهای مخصوص اعضا باخبر می‌شه.
+<br>
+<strong>قبل از سفارش، کانال مازالی رو چک کن! ❤️</strong>
+</p>
+
+<div class="hero-buttons">
+
+<a class="btn btn-bale"
+href="https://ble.ir/fastfoodmazali"
+target="_blank">
+📲 عضویت در کانال بله
+</a>
+
+<a class="btn btn-menu"
+href="#menu">
+🍔 مشاهده منو
+</a>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section id="popular" class="section">
-  <div class="container">
 
-    <h2 class="section-title">🔥 پرفروش‌های مازالی</h2>
+<!-- CHANNEL -->
 
-    <div class="cards">
+<div class="channel-box">
 
-      <div class="card">
-        <h3>🥪 بندری</h3>
-        <p>یکی از محبوب‌ترین ساندویچ‌های مازالی</p>
-        <div class="price">۲۰۰,۰۰۰ تومان</div>
-      </div>
+<h2>
+🎁 عضو کانال مازالی باش!
+</h2>
 
-      <div class="card">
-        <h3>🌭 هات‌داگ</h3>
-        <p>خوشمزه و پرطرفدار</p>
-        <div class="price">۲۰۰,۰۰۰ تومان</div>
-      </div>
+<p>
+تخفیف‌ها و پیشنهادهای ویژه را از دست نده.
+قیمت‌های مناسب‌تر ممکنه فقط برای مدت کوتاهی اعلام بشن.
+</p>
 
-      <div class="card">
-        <h3>🥪 ژامبون تنوری با قارچ و پنیر</h3>
-        <p>یکی از انتخاب‌های محبوب مشتری‌ها</p>
-        <div class="price">۳۷۰,۰۰۰ تومان</div>
-      </div>
+<a class="channel-btn"
+href="https://ble.ir/fastfoodmazali"
+target="_blank">
+📲 ورود به کانال بله مازالی
+</a>
 
-      <div class="card">
-        <h3>🎁 پک ۷۹۰</h3>
-        <p>مناسب برای یک جمع دوستانه</p>
-        <div class="price">۷۹۰,۰۰۰ تومان</div>
-      </div>
+</div>
 
-    </div>
-  </div>
+
+<!-- BEST SELLERS -->
+
+<section id="bestsellers">
+
+<h2 class="section-title">
+🔥 <span>پرفروش‌های</span> مازالی
+</h2>
+
+<div class="cards">
+
+
+<div class="card">
+
+<img class="card-img"
+src="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=800&q=85">
+
+<div class="card-body">
+
+<h3>🥪 بندری</h3>
+
+<div class="description">
+یکی از محبوب‌ترین انتخاب‌های مازالی
+</div>
+
+<div class="price">
+۲۰۰,۰۰۰ تومان
+</div>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<img class="card-img"
+src="https://images.unsplash.com/photo-1612392062631-94dd858cba88?auto=format&fit=crop&w=800&q=85">
+
+<div class="card-body">
+
+<h3>🌭 هات‌داگ</h3>
+
+<div class="description">
+خوشمزه و پرطرفدار
+</div>
+
+<div class="price">
+۲۰۰,۰۰۰ تومان
+</div>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<img class="card-img"
+src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=85">
+
+<div class="card-body">
+
+<h3>🥪 ژامبون تنوری</h3>
+
+<div class="description">
+ژامبون تنوری با قارچ و پنیر
+</div>
+
+<div class="price">
+۳۷۰,۰۰۰ تومان
+</div>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<img class="card-img"
+src="https://images.unsplash.com/photo-1548365328-8b849e6f90b8?auto=format&fit=crop&w=800&q=85">
+
+<div class="card-body">
+
+<h3>🍕 پک ۷۹۰</h3>
+
+<div class="description">
+مناسب برای یک جمع دوستانه
+</div>
+
+<div class="price">
+۷۹۰,۰۰۰ تومان
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section id="menu" class="section">
-  <div class="container">
 
-    <h2 class="section-title">🍔 منوی مازالی</h2>
+<!-- MENU -->
 
-    <h3 class="category">🥪 ساندویچ‌ها</h3>
+<section id="menu">
 
-    <div class="menu-item">
-      <div>
-        <div class="name">بندری</div>
-      </div>
-      <div class="prices">۲۰۰,۰۰۰ تومان</div>
-    </div>
+<h2 class="section-title">
+🍔 <span>منوی</span> مازالی
+</h2>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">هات‌داگ</div>
-      </div>
-      <div class="prices">۲۰۰,۰۰۰ تومان</div>
-    </div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">کوکتل</div>
-      </div>
-      <div class="prices">۲۰۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-section">
 
-    <div class="menu-item">
-      <div>
-        <div class="name">بندری با قارچ و پنیر</div>
-      </div>
-      <div class="prices">۳۰۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-title">
+🥪 ساندویچ‌ها
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">هات‌داگ با قارچ و پنیر</div>
-      </div>
-      <div class="prices">۳۰۰,۰۰۰ تومان</div>
-    </div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">کوکتل با قارچ و پنیر</div>
-      </div>
-      <div class="prices">۳۰۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">بندری</div>
+<div class="item-price">۲۰۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">فلافل ساده — ۵ قرص</div>
-      </div>
-      <div class="prices">۱۶۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-i
+  tem">
+<div class="item-name">هات‌داگ</div>
+<div class="item-price">۲۰۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">فلافل با قارچ و پنیر</div>
-      </div>
-      <div class="prices">۲۵۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">کوکتل</div>
+<div class="item-price">۲۰۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">فلافل با کوکتل</div>
-      </div>
-      <div class="prices">۲۲۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">بندری با قارچ و پنیر</div>
+<div class="item-price">۳۰۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">فلافل با کالباس</div>
-      </div>
-      <div class="prices">۲۲۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">هات‌داگ با قارچ و پنیر</div>
+<div class="item-price">۳۰۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">فلافل با ژامبون</div>
-      </div>
-      <div class="prices">۲۲۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">کوکتل با قارچ و پنیر</div>
+<div class="item-price">۳۰۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">فلافل آلمانی</div>
-      </div>
-      <div class="prices">۲۲۰,۰۰۰ تومان</div>
-    </div>
-    <div class="menu-item">
-      <div>
-        <div class="name">ژامبون تنوری</div>
-      </div>
-      <div class="prices">۳۷۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">فلافل ساده — ۵ قرص</div>
+<div class="item-price">۱۶۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">ژامبون تنوری با قارچ و پنیر</div>
-      </div>
-      <div class="prices">۳۷۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">فلافل با قارچ و پنیر</div>
+<div class="item-price">۲۵۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">بمب ژامبون تنوری</div>
-        <div class="description">ژامبون، قارچ، پنیر و سیب‌زمینی</div>
-      </div>
-      <div class="prices">۴۵۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">فلافل با کوکتل</div>
+<div class="item-price">۲۲۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">ساندویچ فیله مرغ ساده</div>
-      </div>
-      <div class="prices">۳۵۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">فلافل با کالباس</div>
+<div class="item-price">۲۲۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">ساندویچ فیله مرغ با قارچ و پنیر</div>
-      </div>
-      <div class="prices">۴۲۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">فلافل با ژامبون</div>
+<div class="item-price">۲۲۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">ساندویچ فیله سوخاری</div>
-      </div>
-      <div class="prices">۳۷۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">فلافل آلمانی</div>
+<div class="item-price">۲۲۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">ساندویچ فیله سوخاری با قارچ و پنیر</div>
-      </div>
-      <div class="prices">۴۵۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">ژامبون تنوری</div>
+<div class="item-price">۳۷۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">رولت کوکتل اسپشیال</div>
-        <div class="description">ژامبون + کوکتل + قارچ و پنیر</div>
-      </div>
-      <div class="prices">۳۷۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">ژامبون تنوری با قارچ و پنیر</div>
+<div class="item-price">۳۷۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">رولت هات‌داگ</div>
-      </div>
-      <div class="prices">۳۷۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">بمب ژامبون تنوری</div>
+<div class="item-price">۴۵۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">ساندویچ میکس دونر کباب</div>
-        <div class="description">قارچ، پنیر، پیاز، گوجه و فلفل دلمه</div>
-      </div>
-      <div class="prices">۴۵۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">ساندویچ فیله مرغ ساده</div>
+<div class="item-price">۳۵۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">ساندویچ دونر کباب</div>
-        <div class="description">قارچ، پنیر، پیاز، گوجه و فلفل دلمه</div>
-      </div>
-      <div class="prices">۴۰۰,۰۰۰ تومان</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">ساندویچ فیله مرغ با قارچ و پنیر</div>
+<div class="item-price">۴۲۰,۰۰۰</div>
+</div>
 
-    <h3 class="category">🍕 پیتزاها</h3>
+<div class="menu-item">
+<div class="item-name">ساندویچ فیله سوخاری</div>
+<div class="item-price">۳۷۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">پیتزا قارچ و فیله مرغ</div>
-      </div>
-      <div class="prices">یک‌نفره ۴۰۰,۰۰۰<br>دو‌نفره ۵۰۰,۰۰۰</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">ساندویچ فیله سوخاری با قارچ و پنیر</div>
+<div class="item-price">۴۵۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">پیتزا مخلوط</div>
-      </div>
-      <div class="prices">یک‌نفره ۳۸۰,۰۰۰<br>دو‌نفره ۴۸۰,۰۰۰</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">رولت کوکتل اسپشیال</div>
+<div class="item-price">۳۷۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">پیتزا پپرونی</div>
-      </div>
-      <div class="prices">یک‌نفره ۴۰۰,۰۰۰<br>دو‌نفره ۵۰۰,۰۰۰</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">رولت هات‌داگ</div>
+<div class="item-price">۳۷۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">پیتزا میکس دونر کباب</div>
-      </div>
-      <div class="prices">یک‌نفره ۴۵۰,۰۰۰<br>دو‌نفره ۵۵۰,۰۰۰</div>
-    </div>
+<div class="menu-item">
+<div class="item-name">دونر کباب</div>
+<div class="item-price">۴۵۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">پیتزا قارچ و فیله سوخاری</div>
-      </div>
-      <div class="prices">یک‌نفره ۴۵۰,۰۰۰<br>دو‌نفره ۵۵۰,۰۰۰</div>
-    </div>
-    <h3 class="category">🍟 سیب‌زمینی و چیکن‌باکس</h3>
+<div class="menu-item">
+<div class="item-name">میکس دونر کباب</div>
+<div class="item-price">۴۰۰,۰۰۰</div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">سیب‌زمینی ساده</div>
-      </div>
-      <div class="prices">۲۵۰,۰۰۰ تومان</div>
-    </div>
+</div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">سیب‌زمینی با قارچ و پنیر</div>
-      </div>
-      <div class="prices">۳۵۰,۰۰۰ تومان</div>
-    </div>
 
-    <div class="menu-item">
-      <div>
-        <div class="name">چیکن‌باکس ویژه</div>
-        <div class="description">
-          سیب‌زمینی + فیله مرغ + گوجه + پیاز + فلفل دلمه + قارچ + پنیر
-        </div>
-      </div>
-      <div class="prices">۵۰۰,۰۰۰ تومان</div>
-    </div>
+<!-- PIZZA -->
 
-  </div>
+<div class="menu-section">
+
+<div class="menu-title">
+🍕 پیتزاها
+</div>
+
+<div class="menu-item">
+<div class="item-name">پیتزا قارچ و فیله مرغ — یک‌نفره</div>
+<div class="item-price">۴۰۰,۰۰۰</div>
+</div>
+
+<div class="menu-item">
+<div class="item-name">پیتزا قارچ و فیله مرغ — دونفره</div>
+<div class="item-price">۵۰۰,۰۰۰</div>
+</div>
+
+<div class="menu-item">
+<div class="item-name">پیتزا مخلوط — یک‌نفره</div>
+<div class="item-price">۳۸۰,۰۰۰</div>
+</div>
+
+<div class="menu-item">
+<div class="item-name">پیتزا مخلوط — دونفره</div>
+<div class="item-price">۴۸۰,۰۰۰</div>
+</div>
+
+<div class="menu-item">
+<div class="item-name">پیتزا پپرونی — یک‌نفره</div>
+<div class="item-price">۴۰۰,۰۰۰</div>
+</div>
+
+<div class="menu-item">
+<div class="item-name">پیتزا پپرونی — دونفره</div>
+<div class="item-price">۵۰۰,۰۰۰</div>
+</div>
+
+<div class="menu-item">
+<div class="item-name">پیتزا میکس دونر کباب — یک‌نفره</div>
+<div class="item-price">۴۵۰,۰۰۰</div>
+</div>
+
+<div class="menu-item">
+<div class="item-name">پیتزا میکس دونر کباب — دونفره</div>
+<div class="item-price">۵۵۰,۰۰۰</div>
+</div>
+
+<div class="menu-item">
+<div class="item-name">پیتزا قارچ و فیله سوخاری — یک‌نفره</div>
+<div class="item-price">۴۵۰,۰۰۰</div>
+</div>
+
+<div class="menu-item">
+<div class="item-name">پیتزا قارچ و فیله سوخاری — دونفره</div>
+<div class="item-price">۵۵۰,۰۰۰</div>
+</div>
+
+</div>
+
+
+<!-- FRIES -->
+
+<div class="menu-section">
+
+<div class="menu-title">
+🍟 سیب‌زمینی و چیکن‌باکس
+</div>
+
+<div class="menu-item">
+<div class="item-name">
+  سیب‌زمینی ساده</div>
+<div class="item-price">۲۵۰,۰۰۰</div>
+</div>
+
+<div class="menu-item">
+<div class="item-name">سیب‌زمینی با قارچ و پنیر</div>
+<div class="item-price">۳۵۰,۰۰۰</div>
+</div>
+
+<div class="menu-item">
+<div class="item-name">چیکن‌باکس ویژه</div>
+<div class="item-price">۵۰۰,۰۰۰</div>
+</div>
+
+</div>
+
 </section>
 
-<section id="packs" class="section">
-  <div class="container">
 
-    <h2 class="section-title">🎁 پک‌های ویژه مازالی</h2>
+<!-- PACKS -->
 
-    <div class="cards">
+<section id="packs">
 
-      <div class="card">
-        <h3>پک ۱</h3>
-        <p>
-          ۴ عدد ساندویچ به انتخاب شما از بین:
-          هات‌داگ، بندری، کوکتل، فلافل و فلافل آلمانی
-        </p>
-        <p>+ یک نوشابه خانواده</p>
-        <div class="price">۷۹۰,۰۰۰ تومان</div>
-      </div>
+<h2 class="section-title">
+🎁 <span>پک‌های ویژه</span> مازالی
+</h2>
 
-      <div class="card">
-        <h3>پک ۲</h3>
-        <p>
-          یک پیتزای مخلوط یک‌نفره
-          + یک ساندویچ بندری
-          + موارد همراه پک
-        </p>
-        <div class="price">۵۵۰,۰۰۰ تومان</div>
-      </div>
 
-      <div class="card">
-        <h3>پک ۳</h3>
-        <p>
-          ۲ عدد پیتزای مخلوط دو‌نفره
-          + یک ژامبون تنوری با قارچ و پنیر
-          + یک نوشابه خانواده
-        </p>
-        <div class="price">۱,۳۰۰,۰۰۰ تومان</div>
-      </div>
+<div class="pack">
 
-    </div>
-  </div>
+<h3>🎁 پک ۱</h3>
+
+<p>
+۴ عدد ساندویچ به انتخاب شما از بین:
+هات‌داگ، بندری، کوکتل، فلافل و فلافل آلمانی
+<br>
++ یک نوشابه خانواده
+</p>
+
+<span class="pack-price">
+۷۹۰,۰۰۰ تومان
+</span>
+
+</div>
+
+
+<div class="pack">
+
+<h3>🔥 پک ۲</h3>
+
+<p>
+یک پیتزای مخلوط یک‌نفره
+<br>
++ یک ساندویچ بندری
+<br>
++ دو عدد دوغ لیوانی
+</p>
+
+<span class="pack-price">
+۵۵۰,۰۰۰ تومان
+</span>
+
+</div>
+
+
+<div class="pack">
+
+<h3>🎉 پک ۳</h3>
+
+<p>
+۲ عدد پیتزای مخلوط دو‌نفره
+<br>
++ یک ژامبون تنوری با قارچ و پنیر
+<br>
++ یک نوشابه خانواده
+</p>
+
+<span class="pack-price">
+۱,۳۰۰,۰۰۰ تومان
+</span>
+
+</div>
+
 </section>
-<section id="contact" class="section">
-  <div class="container">
 
-    <h2 class="section-title">📍 تماس و آدرس</h2>
 
-    <div class="cards">
+<!-- CHANNEL AGAIN -->
 
-      <div class="card">
-        <h3>📍 آدرس مازالی</h3>
-        <p>
-          پردیس، میدان امام خمینی، پاساژ ایران‌زمین
-        </p>
-      </div>
+<div class="channel-box">
 
-      <div class="card">
-        <h3>📞 تماس</h3>
-        <p>
-          تلفن: ۰۲۱۷۶۲۷۹۴۰۳
-        </p>
-        <p>
-          موبایل: ۰۹۱۰۲۴۵۶۷۵۴
-        </p>
-      </div>
+<h2>
+📲 تخفیف بعدی شاید برای تو باشه!
+</h2>
 
-      <div class="card">
-        <h3>📲 کانال بله</h3>
-        <p>
-          برای دیدن تخفیف‌ها و پیشنهادهای ویژه عضو کانال مازالی شوید.
-        </p>
+<p>
+مازالی تخفیف‌های ویژه و پیشنهادهای محدود رو در کانال بله اعلام می‌کنه.
+عضو باش تا از دستشون ندی ❤️
+</p>
 
-        <a
-          class="btn bale"
-          href="https://ble.ir/fastfoodmazali"
-          target="_blank">
-          عضویت در کانال بله
-        </a>
-      </div>
+<a class="channel-btn"
+href="https://ble.ir/fastfoodmazali"
+target="_blank">
+🔥 عضو کانال بله مازالی شو
+</a>
 
-    </div>
-  </div>
+</div>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="contact">
+
+<h2>📍 تماس و آدرس مازالی</h2>
+
+<p>
+پردیس، میدان امام خمینی، پاساژ ایران‌زمین
+</p>
+
+<p>
+📞 ۰۲۱۷۶۲۷۹۴۰۳
+</p>
+
+<p>
+📱 ۰۹۱۰۲۴۵۶۷۵۴
+</p>
+
+<br>
+
+<a class="channel-btn"
+href="https://ble.ir/fastfoodmazali"
+target="_blank">
+📲 کانال بله مازالی
+</a>
+
+</div>
+
 </section>
+
 
 </main>
 
+
 <footer>
-  <p>🍔 فست‌فود مازالی</p>
-  <p>طعم خوب، غذای تازه، حال خوب ❤️</p>
-  <p>© 2026 Mazali Fast Food</p>
+
+🍔 فست‌فود مازالی
+<br>
+طعم خوب، غذای تازه، حال خوب ❤️
+<br><br>
+© 2026 Mazali Fast Food
+
 </footer>
+
 
 </body>
 </html>
